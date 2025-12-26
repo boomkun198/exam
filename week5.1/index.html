@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 5 - แบบฟอร์มยืมหนังสือ</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#e2fce9] min-h-screen flex justify-center p-4">
+
+    <div class="bg-white w-full max-w-lg p-8 mt-4 rounded-xl shadow-sm">
+        
+        <h1 class="text-center font-bold text-2xl text-black uppercase tracking-wide">แบบฟอร์มยืมหนังสือ</h1>
+        <p class="text-[12px] text-center text-red-500 mt-1 font-medium">
+            แบบฟอร์มยืมหนังสือสำหรับนักศึกษามทร.กรุงเทพ
+        </p>
+
+        <form class="mt-8 space-y-5">
+            
+            <div class="flex flex-col items-center bg-gray-50 p-4 rounded-lg border border-dashed border-gray-300">
+                <p class="text-xs text-gray-400 mb-2">หนังสือที่เลือก</p>
+                <img src="https://cdn.discordapp.com/attachments/1079077220028522601/1453963006642884739/IMG_4334.jpg?ex=694f5c12&is=694e0a92&hm=eea406e537d00a67389a1c6e3b77bec3147877a125bb7f2f888922ebb1afc835&" 
+                     
+                     class="w-32 h-44 object-cover shadow-md rounded-md">
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <p class="font-bold text-gray-700 mb-2 text-sm">ชื่อ</p>
+                    <input type="text" placeholder="กรุณาระบุชื่อ" class="input input-bordered w-full bg-white border-gray-300 text-sm">
+                </div>
+                <div>
+                    <p class="font-bold text-gray-700 mb-2 text-sm">นามสกุล</p>
+                    <input type="text" placeholder="กรุณาระบุนามสกุล" class="input input-bordered w-full bg-white border-gray-300 text-sm">
+                </div>
+            </div>
+
+            <div>
+                <p class="font-bold text-gray-700 mb-2 text-sm">รหัสนักศึกษา</p>
+                <input type="text" placeholder="กรุณาระบุรหัสนักศึกษา" class="input input-bordered w-full bg-white border-gray-300 text-sm focus:border-black">
+            </div>
+
+            <div>
+                <p class="font-bold text-gray-700 mb-2 text-sm">📚 หนังสือที่ต้องการยืม</p>
+                <select class="select select-bordered w-full bg-white border-gray-300 text-sm font-normal">
+                    <option disabled>กรุณาเลือกหนังสือ</option>
+                    <option selected>หนังสือ A: </option>
+                    <option selected>หนังสือ B:</option>
+                    <option selected>หนังสือ C: </option>
+                </select>
+            </div>
+
+            <div>
+                <p class="font-bold text-gray-700 mb-2 text-sm">หมายเหตุ</p>
+                <textarea class="textarea textarea-bordered w-full bg-white border-gray-300 h-24 text-sm" placeholder="กรุณาระบุรายละเอียดเพิ่มเติม"></textarea>
+            </div>
+
+            <div class="pt-4">
+                <button type="submit" class="btn btn-success w-full text-white text-lg bg-[#00d084] border-none hover:bg-[#00b372] transition-colors">
+                    ส่งแบบฟอร์ม
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
